@@ -8,7 +8,8 @@ import streamlit.components.v1 as stc # <-- 1. IMPORTAMOS EL MÓDULO DE COMPONEN
 st.set_page_config(page_title="Inspiración Diaria", page_icon="💡", layout="centered")
 
 # --- 2. URL DEL BACKEND ---
-API_URL = "http://127.0.0.1:8000/api/v1/inspiration"
+#API_URL = "http://127.0.0.1:8000/api/v1/inspiration"
+API_URL = "https://inspiracion-diaria-api.onrender.com/api/v1/inspiration"
 
 # --- 3. FUNCIÓN PARA CARGAR DATOS ---
 @st.cache_data(ttl=3600)
